@@ -1,0 +1,5 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('commons-jexl3-3.1.jar'))
+dependencies {
+    implementation files('commons-jexl3-3.1.jar')
+}

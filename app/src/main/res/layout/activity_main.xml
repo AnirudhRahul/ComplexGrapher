@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="15dp"
+    android:paddingTop="10dp"
+    tools:context="integration.math.anirudh.grapher.MainActivity">
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textView"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText"
+        android:layout_alignBottom="@+id/editText"
+        android:layout_alignParentStart="true"
+        android:text="f(z)="
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/refreshBtn"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/editText"
+        android:text="Refresh" />
+
+    <Switch
+        android:text="Complex Mode  "
+        android:id="@+id/modeSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/refreshBtn"
+        android:layout_below="@+id/editText" />
+
+
+    <ImageView
+        android:id="@+id/imageViewDistort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:scaleType="center"
+        android:scaleX="3"
+        android:scaleY="3"
+        android:background="@color/colorAccent"
+         />
+
+
+</RelativeLayout>
